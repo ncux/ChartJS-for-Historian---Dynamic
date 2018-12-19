@@ -124,7 +124,6 @@ function checkIfFormIsFullyFilled(e) {
     e.preventDefault();
     console.log('button clicked');
 
-
     let formInputs = form.elements;
     let emptyFields = [...formInputs].some(input => input.value === '');
     if (emptyFields) {
@@ -183,7 +182,7 @@ function generateQueryUrl() {
 
 // trims off the seconds
 function simplifyTime(timestamp) {
-    return timestamp.slice(0, 17);
+    return timestamp.slice(0, 16);
 }
 
 
