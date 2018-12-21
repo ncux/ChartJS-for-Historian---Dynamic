@@ -1,4 +1,3 @@
-
 let API = {
     access_token: "",
     tagsUrl: 'https://dev.sealu.net:4433/api/v1/forward?url=/historian-rest-api/v1/tagslist',
@@ -158,6 +157,7 @@ function getValuesAndPlotChart() {
                     valuesArray.push((parseInt(value.Value)).toFixed(0));
                     plotChart();
                 })
+
             }
         };
 
