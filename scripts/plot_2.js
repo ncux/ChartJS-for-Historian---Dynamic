@@ -149,7 +149,7 @@ function getValuesAndPlotChart() {
             if(xhr.status === 200) {
                 // console.log(xhr.responseText);
                 let historianData = await JSON.parse(xhr.responseText);
-                let timeStampsAndValues = historianData.Data[0].Samples;
+                let timeStampsAndValues = historianData['Data'][0].Samples;
                 console.log(timeStampsAndValues);
                 timeStampsAndValues.forEach(value => {
                     timeArray.push(simplifyTime(value.TimeStamp));
